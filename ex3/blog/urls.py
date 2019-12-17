@@ -15,8 +15,9 @@ Including another URLconf
 """
 from django.urls import path
 from posts.views import mostrar_home, mostrar_formulario
+from posts import views
 
 urlpatterns = [
-    path('', mostrar_home),
-    path('formulario/', mostrar_formulario),
+    path('', views.mostrar_home),
+    path('formulario/', views.mostrar_formulario),
 ]
